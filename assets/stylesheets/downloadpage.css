@@ -137,6 +137,15 @@ h3{
     #distributions span, #download-mirrors span{
         margin-top: 1%;
         text-align: center;
+        font-size: 90%;
+    }
+
+    #distributions h3, #download-mirrors h3{
+        font-size: 111%;
+    }
+
+    #distributions p, #download-mirrors p {
+        font-size: 95%;
     }
     
     
