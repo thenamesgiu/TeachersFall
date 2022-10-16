@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--All the meta info and title-->
+    <meta charset="UTF-8">
+    <meta name="description" content = "Teachers Fall game website">
+    <meta name="keywords" content = "Teachers, Fall, BitByte">
+    <meta name="author" content = "BitByte GameDev">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BitByte - Teachers Fall</title>
+    <!--Using a custom icon, it's the same for all the .html files-->
+    <link rel="icon" href="assets/website_icon.png" type="image/gif">
+    
+    <!--All stylesheet used-->
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="stylesheet" href="assets/stylesheets/aboutus.css">
+    <link rel="stylesheet" href="assets/stylesheets/formstyle.css">
+    <!--Common FontAwesome sheet-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!--The only script used-->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+<body>
+    <header id="page-header">
+        <img src="resource/Logo_for_webpage.png" alt="Logotipo jogo Teachers Fall"></img>
+    </header>
+    <nav>
+        <ul id ="navbar" class = "topnav">
+            <li><a class="NotActive" href = "index.html">INÍCIO</a></li>
+            <li><a class="ActiveNow" href = "about.html">BITBYTE</a></li>
+            <li><a class="NotActive" href = "distribution.html">PERGUNTAS</a></li>
+            <li><a class="NotActive" href = "download.html">DOWNLOAD</a></li>
+            <ul id="toggle-item">
+                <li>
+                    <a href="#" class="icon-toggle" onclick="ResponsiveToggle()">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                </li>
+            </ul> 
+        </ul>
+    </nav>
+
+    <div class="Page-title">
+        <h2>Sobre a BitByte</h2>
+    </div>
+    <section id="profile-card">
+        <div id="Bitbyte-card" class="profile">
+            <div class="rounded-border" id="Bitbyte-pfp">
+                <h4 id="Identification">BitByte™ - Desenvolvedora de Teachers Fall</h4>
+                <div class="align-profile">
+                    <img src="resource/BB-pfp.jpg">
+                    <div id="softwarehouse-desc">
+                        <p> A <b>BitByte™</b> é uma equipe de desenvolvedores brasileira e independente, formada por cinco integrantes sendo todos estudantes do Ensino Médio. </p>
+                        <p><b>Teachers Fall</b> é o primeiro jogo desenvolvido por nossa equipe, sendo distribuído <b>gratuitamente</b>. Se trata de um jogo do gênero RPG, se passando em ambiente escolar. 
+                        A jogatina de Teachers Fall garante <b>entretenimento</b> e também a <b>reflexão</b> sobre temas presentes no cotidiano de estudantes brasileiros.</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="contact-us">
+        <div class="details-section">
+            <h2 id="contact"> Nos contate</h2>
+            <div class="align-text">
+             <span id="desc-contact">Para nos contatar você sempre pode utilizar as redes sociais disponíveis <b onclick="location.href='https://beacons.ai/bitbytegamedev'">(clique aqui para ver a lista).</b> Você também pode nos contatar via e-mail. Para isso, verifique o que pode ser feito nas caixas abaixo, caso nenhum dos casos se aplique, dê preferência a mensagens privadas nas redes sociais.</span>
+            </div>
+            <details class="game-info">
+                <summary class="About-info">Quero reportar um bug</summary>
+                <h3>Siga os seguintes passos:</h3> 
+                <ul>
+                    <li>Utilize <b>"Teachers-Fall - Bug"</b> como assunto do e-mail;</li>
+                    <li>Apresente-se;</li>
+                    <li>Escreva sua mensagem de forma clara e objetiva, especifique onde, como e quando o bug ocorre, também identifique se ele atrapalha sua experiência.</li>
+            </details>
+
+            <details class="game-info">
+                <summary class="About-info">Quero enviar um feedback ou sugestão</summary>
+                <h3>Siga os seguintes passos:</h3> 
+                <ul>
+                    <li>Utilize <b>"Teachers-Fall - Feedback"</b> ou <b>"Teachers-Fall - Sugestão"</b> como assunto do e-mail;</li>
+                    <li>Apresente-se;</li>
+                    <li>Escreva sua mensagem de forma clara e objetiva.</li>
+                </ul>
+            </details>
+
+            <details class="game-info">
+                <summary class="About-info">Quero tirar uma dúvida</summary>
+                <h3>Siga os seguintes passos:</h3> 
+                <ul>
+                    <li>Leia todos os itens na guia de <b>PERGUNTAS FREQUENTES;</b></li>
+                    <li>Se sua pergunta não foi respondida, envie um e-mail;</li>
+                    <li>Utilize <b>"Teachers Fall - Dúvida"</b> como assunto do e-mail;</li>
+                    <li>Apresente-se;</li>
+                    <li>Escreva sua mensagem de forma clara e objetiva.</li>
+                </ul>
+            </details>
+
+            <details class="game-info">
+                <summary>Quero enviar uma fanart</summary>
+                <span>Dê preferencia para canais como <b>Discord</b>, <b>Twitter</b> ou <b>Instagram</b>.</span>
+            </details>
+        </div>
+        <div class="form-section">
+            <h2>Envie seu e-mail</h2>
+            <form action="https://formsubmit.co/QABitByte022@hotmail.com" method="POST">
+                
+                <label>Insira o assunto do e-mail:</label>
+                <input type="text" name="_subject" placeholder="Ex.: Teachers Fall - Sugestão" title="Insira o assunto a ser tratado no e-mail conforme as caixas">
+               
+                <label>Insira o seu e-mail:</label>
+                <input type="email" name="email" placeholder="Ex.: meuemail@email.com" title="Insira seu e-mail, assim podemos te responder.">
+                
+                <label>Informe como quer ser identificado:</label>
+                <input type="text" name="name" placeholder="Ex.: Alguém dos Santos" title="Insira o nome pelo qual deseja ser identificado.">
+
+                <label>Insira a mensagem desejada:</label>
+                <input type="text" name="message" id="textarea-input" placeholder="Ex.: Acho que o jogo..." title="Insira a mensagem apropriada de acordo com o assunto do e-mail.">
+
+                <input type="hidden" name="_template" value="box">
+                
+                <button type="submit">Enviar</button>
+
+                <input type="hidden" name="_next" value="http://127.0.0.1:5500/thanks.html">
+            </form>
+        </div>
+    </section>
+
+    <div id="backtotop">
+        <a href="#page-header"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <footer>
+        <div class="left-on-footer">
+            <h2>BitByte™</h2>
+            <p id="slogan">Um bit de cada vez</p>
+        </div>
+        <div class="right-on-footer">
+           
+            <p class="social-media">NOS ACOMPANHE</p>
+            <a class="social-media" href="https://www.facebook.com/profile.php?id=100085885827970"><i class="fab fa-facebook-f" id="facebook-icon"></i></a>
+            <a class="social-media" href="https://instagram.com/teachersfall?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            <a class="social-media" onclick="DiscordServer()"><i class="fab fa-discord" id = "discord-icon"></i></a>
+            <a class="social-media" href="https://twitter.com/teachersFalling"><i class="fab fa-twitter"></i></a>
+            <p class="copyright-paragraph">Copyright © 2020-2022 BitByte. All rights reserved.</p>
+        </div>  
+    </footer>
+</body>
+</html>

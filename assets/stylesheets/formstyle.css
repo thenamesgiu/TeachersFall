@@ -1,0 +1,60 @@
+/*Styling form inside About page*/
+input{
+    outline: none;
+    caret-color: #fdb10d;
+    color: #640e48;
+    font-size: 100%;
+    width: 45%;
+    border-radius: 8px;
+    padding: 0.8%;
+    border: 3px solid #eb9a0452;
+}
+
+input::placeholder{
+    color:#0a0809ab;
+    font-weight: 500;
+}
+
+label{
+    font-weight: bolder;
+    margin-top: 1%;
+    margin-bottom: 0.5%;
+}
+
+button{
+    cursor: pointer;
+    background-color: #faa302;
+    border-radius: 8px;
+    padding: 1%;
+    text-align: center;
+    margin-top: 2%;
+    font-weight: bolder;
+    font-size: 110%;
+    width: 25%;
+    box-shadow: 8px 8px 8px #0b070e28;
+    cursor: pointer;
+    color: #611544;
+}
+
+button:hover{
+    color: #F5EDFF;
+    transition: all 0.5s ease;
+    box-shadow: 8px 8px 8px #0b070e63;
+    background-image: linear-gradient(#ff6131, #d6097a);
+}
+
+@media(max-width: 650px){
+    input{
+        width: 90%;
+        font-size: 90%;
+    }
+
+    input::placeholder{
+        color: #640e47c9;
+    }
+
+    label{
+        margin-top: 2.5%;
+        margin-bottom: 1%;
+    }
+}

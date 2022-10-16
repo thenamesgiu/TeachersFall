@@ -1,0 +1,33 @@
+/*Inside summary items*/
+h4{
+    background: -webkit-linear-gradient(#faa302, #f7d202);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 130%;
+    text-align: center;
+}
+
+.systems-ongame{
+    margin-top: 4%;
+    text-transform: uppercase;
+}
+
+.controls-game{
+    margin-top: 2%;
+    font-weight: bold;
+    color: #f7d202;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.listed-items li b{
+    color: #F7D202;
+}
+
+.listed-items li{
+    margin-top: 2%;
+}
+.game-info img{
+    width: 100%;
+}
+

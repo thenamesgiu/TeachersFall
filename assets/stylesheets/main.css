@@ -1,0 +1,137 @@
+/*Containers-index*/
+.box-container{
+    margin-bottom: 1%;
+    background-color:#2b082e63;
+    box-shadow: 4px 4px 4px #0b070e1e;
+    border-radius: 4px;
+    width: 85%;
+    margin-right: 5%;
+    padding: 2%;
+}
+
+.box-container h4{
+    text-transform: uppercase;
+    font-size: 141%;
+    background: -webkit-linear-gradient(#faa302, #f7d202);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 10px 10px 15px #12011341;
+    cursor: default;
+}
+
+.box-container p{
+    cursor: default;
+}
+
+.box-container b{
+    background: -webkit-linear-gradient(#faa302, #f7d202);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*Space between navbar and intro*/
+#index-intro{
+    margin-top: 2%; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+/*MC side img*/
+
+#MC-image img{
+    height: 100%;
+    
+}
+
+/*First grid items align*/
+
+.align-index{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#buttons-index{
+    width: 85%;
+    margin-right: 5%;
+    
+}
+
+.buttonkind{
+    background-color: #faa302;
+    border-radius: 8px;
+    padding: 2%;
+    text-align: center;
+    margin-bottom: 2%;
+    font-weight: bolder;
+    font-size: 150%;
+    box-shadow: 4px 4px 4px #0b070e56;
+    cursor: pointer;
+    color: #611544;
+}
+
+.buttonkind:hover{
+    color: #F5EDFF;
+    transition: all 0.5s ease;
+    background-image: linear-gradient(#ff6131, #b80c6b);
+}
+
+#gaming-button{
+    cursor: default;
+    color: #F5EDFF;
+    background-image: linear-gradient(#582258, #3b0a28);
+}
+
+/*MC sprite and decoration*/
+#Idle-MC{
+    height: 50%;
+}
+
+#decoration-index{
+    display: none;
+}
+
+/*Reponsive index, elements were already specified up above*/
+@media(max-width: 650px){
+   #MC-image{
+        display: none;
+   }
+
+   .box-container, .buttonkind{
+    margin-top: 5%;
+   }
+
+   #decoration-index{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 5%;
+       
+   }
+
+   .box-talking img{
+        box-shadow: 4px 4px 4px #2c1b3a67;
+        height: 15rem;
+   }
+
+   #chibi{
+        margin-right: 25%;
+        height: 65%;
+   }
+
+   #backtotop{
+        margin-right: -85%;
+        padding: 5%;
+   }
+
+   #chibi:hover{
+        transition: all 0.5s ease-in;
+        height: 70%;
+   }
+
+   .box-talking img:hover{
+        transition: all 0.5s ease-in;
+        height: 18rem;
+   }
+}

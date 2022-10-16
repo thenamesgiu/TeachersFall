@@ -1,0 +1,143 @@
+
+
+/*Title css*/
+#page-title{
+    cursor: default;
+    text-align:center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+    font-size: 190%;
+    background: -webkit-linear-gradient(#faa302, #f7d202);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 10px 10px 15px #12011341;
+}
+
+
+.game-mirrors img, .game-pages img{
+    margin-top: 10%;
+    margin-bottom: 2%;
+    height:  10rem;
+    cursor: pointer;
+    border-radius: 50%;
+    box-shadow: 4px 4px 4px #0b070e1e;
+}
+
+.game-mirrors img:hover, .game-pages img:hover{
+    height: 10.1rem;
+    transition: 0.5s all ease;
+}
+
+#distributions, #download-mirrors{
+    background-color: #63184379;
+    margin-bottom: 2%;
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    border-radius: 18px;
+    box-shadow: 4px 4px 4px #0b070e1e;
+}
+
+#distributions span, #download-mirrors span{
+    color: #fac768;
+    cursor: default;
+}
+
+h3{
+    background: -webkit-linear-gradient(#f3c563, #f0941d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 140%;
+    font-weight: bolder;
+    margin-top: 2%;
+    text-shadow: 10px 10px 15px #1201134d;
+    cursor: default;
+}
+.game-mirrors li p, .game-pages li p{
+    text-align: center;
+    font-weight: bold;
+    color: #e99517e8;
+    margin-bottom: 15%;
+    cursor: default;
+}
+
+.game-mirrors ul, .game-pages ul{
+    display: flex;
+}
+
+.game-mirrors li, .game-pages li{
+   margin-left: 1rem;
+   margin-right: 1rem;
+ 
+
+}
+
+.flex-grid li:hover{
+
+    background-color: transparent;
+}
+
+.flex-grid{
+    display: flex;
+    flex-direction: row;
+}
+
+.column-grid{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+/*Responsive donwload*/
+@media(max-width: 650px){
+
+    /*page title*/
+    #page-title{
+        font-size: 121%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: 15%;
+        margin-right: 12%;
+    }
+
+    /*Responsive Warning*/
+    .warningSource img{
+        height: 25rem;
+    }
+
+    /*All the grid*/
+    .flex-grid{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /*Info containers*/
+    .game-mirrors img, .game-pages img{
+        height: 7rem;
+    }
+
+    .game-mirrors img:hover, .game-pages img:hover{
+        height: 6.9rem;
+        transition: 0.5s all ease;
+    }
+
+    .column-grid{
+        width: 90%;
+    }
+    
+    #distributions span, #download-mirrors span{
+        margin-top: 1%;
+        text-align: center;
+    }
+    
+    
+}
+
+
+

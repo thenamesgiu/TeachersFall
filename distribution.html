@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--All the meta info and title-->
+    <meta charset="UTF-8">
+    <meta name="description" content = "Teachers Fall game website">
+    <meta name="keywords" content = "Teachers, Fall, BitByte">
+    <meta name="author" content = "BitByte GameDev">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perguntas frequentes - Teachers Fall</title>
+
+    <!--Using a custom icon, it's the same for all the .html files-->
+    <link rel="icon" href="assets/website_icon.png" type="image/gif">
+
+    <!--All stylesheet used-->
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="stylesheet" href="assets/stylesheets/asked.css">
+    <!--Common FontAwesome sheet-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!--The only script used-->
+    <script type="text/javascript" src="js/script.js"></script>
+
+</head>
+
+<!--When loaded, this page will run these two function-->
+<body onload="ShowingUp(), WarningSpoiler()">
+    <header id="page-header">
+     
+        <img src="resource/Logo_for_webpage.png" alt="Logotipo jogo Teachers Fall"></img>
+    </header>
+    <nav>
+        <ul id ="navbar" class = "topnav">
+            <li><a class="NotActive" href = "index.html">INÍCIO</a></li>
+            <li><a class="NotActive" href = "about.html">BITBYTE</a></li>
+            <li><a class="ActiveNow" href = "distribution.html">PERGUNTAS</a></li>
+            <li><a class="NotActive" href = "download.html">DOWNLOAD</a></li>
+            
+            <ul id="toggle-item">
+                <li>
+                    <a href="#" class="icon-toggle" onclick="ResponsiveToggle()">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                </li>
+            </ul> 
+        </ul>
+    </nav>
+
+    <section id="answers">
+        <h2>Perguntas frequentes</h2>
+        <details class="game-info">
+            <summary>Qual o objetivo do jogo? (SPOILER)</summary>
+            
+            <h4 class="systems-ongame">Modo História (DEMO)</h4>
+            <p>Desmotive o professor Louis Flawell e convença-o de que você merece notas justas, utilize as mecânicas e items disponíveis durante sua jogatina. O comportamento desse boss é imprevisível, não tenha certeza de tudo o que vê.</p>
+        
+            <h4 class="systems-ongame">História secundária</h4>
+            <p>Assim como em outros jogos, Teachers Fall também possui uma história secundária. Aqui, as coisas serão um pouco diferentes:</p>
+            <br>
+            <p>Alguns professores vão <b>dropar papéis</b>. Nesses papéis, teremos um parágrafo de uma reportagem que fala sobre a pressão escolar, o bullying e o preconceito no geral. Se o player juntar todos os papéis ao término do game, terá o texto completo.</p>
+            <br>
+            <p>Além disso, espalhados pelo mapa do jogo, teremos monstros menores que os bosses e fáceis de derrotar, mas com uma aparência bizarra, os pixels deformados e barulhos horripilantes. Estes monstros serão a personificação do medo e da insegurança que o jogador sente.</p>
+
+            <h4 class="systems-ongame">Speedrun</h4>
+            <p>Desmotive todos os professores a te darem notas baixas no boletim, faça isso no menor tempo possível.</p>
+
+            <h4 class="systems-ongame">Segredos</h4>
+            <p>Encontre todos os easter-eggs dentro do jogo, alguns estão documentados na Documentação (item especial após a primeira run).</p>
+        </details>
+
+        <details class="game-info">
+            <summary>Em quais plataformas posso encontrá-lo?</summary>
+            
+            <h4 class="systems-ongame">Distribuidoras</h4>
+            <ul class="links-to-web">
+                <li>Teachers Fall pode ser econtrado gratuitamente nas seguintes distribuidoras de jogos independentes. Para mais informações ou acesso aos Mirrors em que o jogo se localiza, acesse nossa página clicando <b onclick="location.href='download.hmtl'" style="cursor:pointer; color: #fccf07">aqui!</b></li>
+                <br>
+                <li onclick="location.href='https://itch.io/'" style="cursor:pointer; color: #fccf07"><b>ITCH.IO</b> - Teachers Fall</li>
+                <br>
+                <li onclick="location.href='https://gamejolt.com/@BitByte-GameDev" style="cursor:pointer; color: #fccf07"><b>GameJolt</b> - BitByte GameDev</li>
+            </ul>
+        </details>
+
+        <details class="game-info">
+            <summary>Quais são os controles?</summary>
+            <p>Teachers Fall apresenta os seguintes controles destacados na imagem abaixo e descritos logo abaixo.</p>
+            <img src="resource/tutorial-teachers-fall.png">
+
+            <h4 class="systems-ongame"> Sistema de interação</h4>
+            <p class="controls-game">Tecla: E</p>
+            <p>Assim que o jogador pressionar a <b>tecla E</b> em algum local no qual seja possível a interação (como por exemplo em uma porta ou um personagem não jogável), uma ação será executada. Exemplos de interação:</p>
+            <ul class="listed-items">
+                <li>
+                    <b>interagindo com as portas:</b> se o jogador interagir com uma das portas do jogo, primeiro será verificado se ele possui uma key (chave) para abri-la. Depois de verificado e se o retorno for true (verdadeiro, o player possui a chave), o player será teletransportado para dentro/fora da room.
+                </li>
+                <li>
+                    <b>interagindo com os personagens não jogáveis:</b> se o jogador interagir com um dos personagens não jogáveis que estão espalhados pelo mapa, uma caixa de diálogo aparecerá e uma conversa será iniciada.                </li>
+            </ul>
+
+            
+            <h4 class="systems-ongame"> Sistema de dash</h4>
+            <p class="controls-game">Tecla: Shift</p>
+            <p>Assim que o jogador pressionar a <b>tecla Shift</b>, a ação de dash será executada.</p>
+            <ul class="listed-items">
+                <li>
+                    O <b>dash</b> nada mais é do que a movimentação acelerada (como uma arrancada) do personagem por um pequeno tempo com um countdown de 5 segundos para ser utilizada novamente. Serve para desviar de ataques inimigos.                
+                </li>
+                
+            </ul>
+        </details>
+
+        <details class="game-info">
+            <summary>Quantos finais o jogo tem? (SPOILER)</summary>
+            <p>O único final disponível por enquanto é o qual Andy (protagonista) consegue convencer louis Flawell a desistir de arruinar seu boletim.</p>
+        </details>
+
+        <details class="game-info" id="cheat-codes-detail" onclick="CheatWarning()">
+            <summary>Quais os cheat-codes do jogo?</summary>
+            <p>Todos os cheat-codes de Teachers Fall serão inseridos na versão final do jogo, sendo referência a outros jogos. Alguns cheats são realizados a partir de comando (terminal dentro do jogo) e outros a partir de uma sequência de botões no teclado.</p>
+            <br>
+            <ul class="selection-area" id="selecting-area" style="color:transparent;">
+                
+            </ul>
+        </details>
+
+        <details class="game-info">
+            <summary>Quais os requisitos mínimos para rodar?</summary>
+            <ul class="listed-items">
+                <li>
+                    <b>Sistema Operacional:</b> Windows 8 ou superior e Linux;
+                </li>
+                <li>
+                    <b>Processador:</b> 2.0 Ghz i5 ou superior;               
+                </li>
+                <li>
+                    <b>Memória:</b> 4GB de Memória RAM;             
+                </li>
+                <li>
+                    <b>Placa gráfica:</b> 1GB Video RAM;             
+                </li>
+                <li>
+                    <b>Espaço em disco:</b> Requer ??? espaço livre;           
+                </li>
+                <li>
+                    <b>Notas adicionais:</b>Uso de teclado recomendado.              
+                </li>
+            </ul>
+        </details>
+
+    </section>
+
+    <div id="backtotop">
+        <a href="#page-header"><i class="fas fa-angle-up"></i></a>
+    </div>
+
+    <footer>
+        <div class="left-on-footer">
+            <h2>BitByte™</h2>
+            <p id="slogan">Um bit de cada vez</p>
+
+        </div>
+        <div class="right-on-footer">
+           
+            <p class="social-media">NOS ACOMPANHE</p>
+            <a class="social-media" href="https://www.facebook.com/profile.php?id=100085885827970"><i class="fab fa-facebook-f" id="facebook-icon"></i></a>
+            <a class="social-media" href="https://instagram.com/teachersfall?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            <a class="social-media" onclick="DiscordServer()"><i class="fab fa-discord" id = "discord-icon"></i></a>
+            <a class="social-media" href="https://twitter.com/teachersFalling"><i class="fab fa-twitter"></i></a>
+            <p class="copyright-paragraph">Copyright © 2020-2022 BitByte. All rights reserved.</p>
+        </div>  
+    </footer>
+</body>
+</html>

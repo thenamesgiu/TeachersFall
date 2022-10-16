@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,700;0,800;1,100;1,200;1,300;1,700;1,800&display=swap');
+
+/*Default*/
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+  
+}
+/*Common CSS*/
+body{
+    background: linear-gradient( #520255, #95006D, #BD064CEE);
+    background-repeat: no-repeat;
+    min-height: 100%;
+    width: 100%;
+   
+}
+
+/*Scrollbar webkit*/
+::-webkit-scrollbar {
+    width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px #282D29; 
+    background: #161616;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(360deg, #cc44d1, #f82c8b, #dd9a1cee); 
+    border-radius: 10px;
+    border: 2px solid #1e272e;
+}
+
+/*Sticky navbar*/
+ul{
+    list-style-type: none;
+}
+
+nav{
+    background-color: #0B070E;
+    overflow: hidden;
+    top: 0;
+    position: sticky;
+}
+
+#navbar li a, #toggle-item li a{
+    float: left;
+    display: block;
+    color:#F5EDFF;
+    font-weight: 800;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 150%;
+}
+
+.NotActive:hover, #toggle-item:hover{
+    background: -webkit-linear-gradient(#ffae00,  #ff6701);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s all ease-in;
+}
+
+#toggle-item{
+    display: none;
+}
+
+/*Active on navbar*/
+.ActiveNow{
+    color: #F5EDFF;
+    background-color: #fa9017de;
+}
+
+/*Sections*/
+section{
+    color: white;
+}
+
+/*Header*/
+header{
+    background-image: url("/resource/headerimage.jpg");
+    background-repeat: no-repeat;
+   
+}
+
+header img{
+   height: 15rem;
+   width: 35rem;
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+/*Footer*/
+
+.center-on-footer{
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.center-on-footer a{
+    display: block;
+}
+
+.left-on-footer{  
+    float: left;
+    margin-left: 5%;
+}
+
+.left-on-footer h2{
+    cursor: default;
+    color:#ca1c96;
+    letter-spacing: 2px;
+}
+
+#slogan{
+    margin-top: 2%;
+    font-size: 89%;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+.right-on-footer{
+   float:right;
+   margin-right: 5%;
+   margin-left: 5%;
+   text-align: center;
+}
+   
+footer{
+    background-color: #0b070ef1;
+    margin-top: 6%;
+    overflow: hidden;
+    padding: 2%;
+    bottom: 0;
+    position: static;
+    width: 100%;
+    
+}
+
+footer p{
+    color:#F5EDFF;
+    cursor: default;
+}
+
+.social-media i{
+    margin-top: 2%;
+    font-size: 110%;
+    color:#F5EDFF;
+    padding: 1%;
+    cursor: pointer;
+}
+
+#facebook-icon, .social-media i{
+    padding: 2%;
+    width: 9%;
+    height: 10%;
+    text-align: center;
+}
+
+#discord-icon{
+    padding: 2.1%;
+    text-align:center;
+    width: 9.9%;
+    
+}
+
+.copyright-paragraph{
+    margin-top: 6%;
+    text-align: center;
+}
+
+.social-media i:hover{
+    background: -webkit-linear-gradient(#ffae00,  #ff6701);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: 0.4s all ease-in;
+}
+
+#backtotop{
+    display: none;
+}
+
+/*CSS for Questions page*/
+
+.game-info{
+    background-color:#2b082e63;
+    padding: 1%;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 3%;
+    box-shadow: 4px 4px 4px #0b070e1e;
+    border-radius: 4px;
+}
+
+#answers h2{
+    cursor: default;
+    text-align:center;
+    margin-top: 3%;
+    text-transform: uppercase;
+    font-size: 250%;
+    background: -webkit-linear-gradient(#faa302, #f7d202);
+        -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 10px 10px 15px #1201134d;
+}
+
+summary{
+    cursor: pointer;
+    font-weight: bolder;
+    font-size: 135%;
+    letter-spacing: 1px;
+    text-shadow: 2px 2px 2px #1201135b;
+    transition: 0.4s all ease-in;
+}
+
+/*Using media query*/
+@media(max-width: 650px){
+
+    body{
+        overflow-x: hidden;
+    }
+    /*Common*/
+  
+    .left-on-footer{
+        display:none;
+    }
+
+    .right-on-footer{
+        margin-top: 3%;
+    }
+    .social-media i{
+        border: none;
+    }
+
+    header img{
+        width: 90%;
+        height: auto;
+    }
+
+   
+    /*Going back to top of the page*/
+    #backtotop{
+        display:block;
+        margin-left: 47.5%;
+        margin-right: 47.5%;
+
+    }
+
+    #backtotop a{
+        font-weight: bolder;
+        text-decoration: none;
+        background: -webkit-linear-gradient(#eb3da8, #f0e6f3);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 170%;
+    }
+   
+   
+
+    /*Questions page*/
+    .game-info{
+        padding: 10px;
+        margin: 35px 50px;
+        margin-top: 3%;
+    }
+
+    summary{
+        letter-spacing: 0px;
+        font-size: 15px;
+    }
+
+    .game-info p{
+        font-size: 13px ;
+        
+    }
+
+    #answers h2{
+        font-size: 151%;
+        margin-bottom: 1%;
+        
+    }
+
+   
+   /*Responsive navbar*/
+    #navbar {
+        font-size: 67%;
+    }
+    .topnav li:not(:first-child){
+        display: none;
+    }
+
+    #toggle-item{
+    float: right;
+    display: block;
+   }
+
+   .topnav.responsive{
+        position: relative;
+     
+    }
+
+    .topnav.responsive #toggle-item{
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a{
+        transition: display 8s ease-in;
+        float: none;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        
+    }
+
+   
+}
+
+

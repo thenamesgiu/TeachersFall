@@ -1,0 +1,180 @@
+/*About page style*/
+.Page-title h2, #contact-us h2{
+     background: -webkit-linear-gradient(#faa302, #f7d202);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     text-transform: uppercase;
+     font-size: 190%;
+     text-align: center;
+     margin-top: 2%;
+     margin-bottom: 1%;
+     text-shadow: 10px 10px 15px #12011341;
+     cursor: default;
+}
+/*Rounded image borders*/
+.rounded-border img{
+    height: 11rem;
+    border: 4px #3610335b solid;
+    border-radius: 100%;
+}
+ 
+ /*Profile div background and style*/
+.profile{
+     background-color:#2b082e3a;
+     width: 95%;
+     border-radius: 8px;
+     padding: 1%;
+     box-shadow: 8px 8px 8px #0b070e0e;
+}
+ 
+#Identification{
+     background: -webkit-linear-gradient(#f7c467, #f7d202);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+     font-weight: bolder;
+     text-align: center;
+     font-size: 145%;
+     text-shadow: 4px 4px 4px #12011313;
+     cursor: default;
+}
+
+.align-profile{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.align-profile p{
+     text-align: left;
+     margin-right: 2.5%;
+     font-size: 111%;
+     cursor: default;
+}
+
+.align-profile img{
+     margin: 1.8%;
+}
+
+#profile-card{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+
+#profile-card b{
+     color: #fabd4b;
+}
+
+
+/*Contact section*/
+#contact-us {
+     margin-top: 2%;
+    
+}
+
+.align-text{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     margin-left: 5%;
+     margin-right: 2%;
+     text-align: center;
+     font-size: 95%;
+     cursor: default;
+}
+
+.details-section{
+     background-color: #550a4533;
+     padding: 1.5%;
+  
+}
+
+#desc-contact b{
+     cursor: pointer;
+}
+
+
+
+/*Contact-rules*/
+.game-info h3, .game-info ul, .game-info span{
+     cursor:default
+}
+
+.game-info h3{
+     color: #f7d202;
+}
+
+.game-info ul{
+     margin-top: 1%;
+     list-style-type: roman;
+     margin-left: 5%;
+}
+
+.game-info ul b, span b{
+     color: #f7be02;
+}
+
+/*form-section*/
+form{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+/*This makes some elements responsive*/
+@media(max-width: 650px){
+     .Page-title h2, #contact-us h2{
+          font-size: 170%;
+          margin-top: 4%;
+     }
+
+     .game-info ul, span{
+          font-size: 95%;
+     }
+
+     .game-info h3{
+          font-size: 98%;
+          margin-top: 2%;
+     }
+
+     .align-text{
+          font-size: 88%;
+     }
+
+     /*Profile card*/
+     #Identification{
+          font-size: 115%;
+          margin-top: 2%;
+          text-align: center;
+          background: -webkit-linear-gradient(#f7c467, #d6b911);
+          -webkit-background-clip: text;
+           -webkit-text-fill-color: transparent;
+     }
+
+     #profile-card p{
+          text-align: center;
+     }
+
+     .align-profile{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+       
+     }
+
+     #softwarehouse-desc{
+          font-size: 78%;
+          margin: 6%;
+         
+     }
+
+     #backtotop{
+          margin-top: 2%;
+          font-size: 121%;
+     }
+     
+}
+
+

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!--All the meta info and title-->
+    <meta charset="UTF-8">
+    <meta name="description" content = "Teachers Fall game website">
+    <meta name="keywords" content = "Teachers, Fall, BitByte">
+    <meta name="author" content = "BitByte GameDev">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início - Teachers Fall</title>
+
+    <!--Using a custom icon, it's the same for all the .html files-->
+    <link rel="icon" href="assets/website_icon.png" type="image/gif">
+
+    <!--All stylesheet used-->
+    <link rel="stylesheet" href="assets/stylesheets/style.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+    <!--Common FontAwesome sheet-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <!--The only script used-->
+    <script type="text/javascript" src="js/script.js"></script>
+
+
+</head>
+<!--When loaded, this page will run this one function-->
+<body onload="WritingBasics()">
+    <header id="page-header">
+        <img src="resource/Logo_for_webpage.png" alt="Logotipo jogo Teachers Fall"></img>
+    </header>
+    <nav>
+        <ul id ="navbar" class = "topnav">
+            <li><a class="ActiveNow" href = "index.html">INÍCIO</a></li>
+            <li><a class="NotActive" href = "about.html">BITBYTE</a></li>
+            <li><a class="NotActive" href = "distribution.html">PERGUNTAS</a></li>
+            <li><a class="NotActive" href = "download.html">DOWNLOAD</a></li>
+            <ul id="toggle-item">
+                <li>
+                    <a href="#" class="icon-toggle" onclick="ResponsiveToggle()">
+                        <i class="fa fa-plus"></i>
+                    </a>
+                </li>
+            </ul> 
+        </ul>
+    </nav>
+   
+    <section class="align-index">
+        <aside id="MC-image">
+            <img src="resource/MC_DODDLE.png">
+        </aside>
+
+        <section id="index-intro">
+ 
+        <div class="box-container">
+            <h4>sobre</h4>
+            <p>Teachers Fall é um jogo independente e brasileiro, está em desenvolvimento no momento, mas logo terá sua DEMO!</p>
+            <br>
+            <p><b>Não é recomendado para menores de 12 anos.</b></p>
+            <br>
+            <p>Está sendo desenvolvido pela equipe de desenvolvimento <b>BitByte™</b>, ele está sendo desenvolvido para um <b>Trabalho de Conclusão de Curso (TCC)</b>, então não é 100% perfeito.</p>
+            <br>
+            <p>Utilize as guias acima na <b>barra de navegação</b> para acessar mais informações sobre nós, sobre o jogo e sua instalação.</p>
+        </div>
+
+        <div class="box-container">
+                <h4>Sinopse</h4>
+                <p id="game-description"></p>
+        </div>
+       
+        <div id="buttons-index">
+            <div class="buttonkind" id="gaming-button">DEMO EM BREVE</div>
+            <div class="buttonkind" onclick="location.href='https://beacons.ai/bitbytegamedev'">ACESSE NOSSAS REDES</div>   
+        </div>
+
+        <div id="decoration-index">
+            <div class="box-talking">
+                <img src="resource/NoDemoYet.png">
+            </div>
+            <img id="chibi" src="resource/MC_Chibi.png">
+        </div>
+        </section>
+
+
+        
+    </section>
+
+    <div id="backtotop">
+        <a href="#page-header"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <footer>
+        <div class="left-on-footer">
+            <h2>BitByte™</h2>
+            <p id="slogan">Um bit de cada vez</p>
+            
+
+        </div>
+        <div class="right-on-footer">
+           
+            <p class="social-media">NOS ACOMPANHE</p>
+            <a class="social-media" href="https://www.facebook.com/profile.php?id=100085885827970"><i class="fab fa-facebook-f" id="facebook-icon"></i></a>
+            <a class="social-media" href="https://instagram.com/teachersfall?igshid=YmMyMTA2M2Y="><i class="fab fa-instagram"></i></a>
+            <a class="social-media" onclick="DiscordServer()"><i class="fab fa-discord" id = "discord-icon"></i></a>
+            <a class="social-media" href="https://twitter.com/teachersFalling"><i class="fab fa-twitter"></i></a>
+            <p class="copyright-paragraph">Copyright © 2020-2022 BitByte. All rights reserved.</p>
+        </div>  
+    </footer>
+</body>
+</html>
