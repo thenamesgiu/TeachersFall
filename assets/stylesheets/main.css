@@ -97,6 +97,7 @@
     body{
         overflow-x:hidden;
         justify-content: center;
+        align-items: center;
     }
    #MC-image{
         display: none;
