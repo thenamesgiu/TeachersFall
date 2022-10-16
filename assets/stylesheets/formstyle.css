@@ -44,6 +44,7 @@ button:hover{
 }
 
 @media(max-width: 650px){
+
     input{
         width: 90%;
         font-size: 90%;

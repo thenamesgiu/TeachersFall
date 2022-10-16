@@ -31,3 +31,8 @@ h4{
     width: 100%;
 }
 
+@media(min-width: 700px) and (max-width: 850px){
+    .game-info{
+        margin-top: 6%;
+    }
+}

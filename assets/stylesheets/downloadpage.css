@@ -91,6 +91,8 @@ h3{
     width: 60%;
 }
 
+
+
 /*Responsive donwload*/
 @media(max-width: 650px){
 
@@ -106,6 +108,7 @@ h3{
 
     /*Responsive Warning*/
     .warningSource img{
+        display: flex;
         height: 25rem;
     }
 
@@ -137,6 +140,23 @@ h3{
     }
     
     
+}
+
+/*Ipad dimensions*/
+@media(min-width: 700px) and (max-width: 850px){
+    .warningSource{
+        display: none;
+    }
+
+    .column-grid{
+        margin-left: 5%;
+      
+    }
+
+    #distributions, #download-mirrors{
+        width: 150%;
+    }
+
 }
 
 
