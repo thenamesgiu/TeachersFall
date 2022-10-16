@@ -96,6 +96,7 @@
 @media(max-width: 650px){
     body{
         overflow-x:hidden;
+        justify-content: center;
     }
    #MC-image{
         display: none;
