@@ -94,6 +94,9 @@
 
 /*Reponsive index, elements were already specified up above*/
 @media(max-width: 650px){
+    body{
+        overflow-x:hidden;
+    }
    #MC-image{
         display: none;
    }
