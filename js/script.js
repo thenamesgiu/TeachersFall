@@ -46,7 +46,7 @@ function WarningSpoiler(){
 
 function WarningDownload(){
     //Alert to warn about the demo, shall be modified when it comes out
-    alert('Por enquanto não há nenhuma demo, então nenhum dos botões te levará a algum lugar...')
+    alert('Ainda estamos trabalhando para disponibilizar o jogo nessa plataforma, dê preferência para as outras.')
 }
 
 function DiscordServer(){
